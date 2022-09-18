@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <div class="container">
+    <nav>
+      <ul class="nav-tabs" >
+        <app-nav class="tab" *ngFor=" let nav of navs; let i = index" [nav] = "nav" [index] = "i" [tab]="tab"></app-nav>
+      </ul>
+    </nav>
+    <ul class="itemContiner">
+      <app-data-item *ngFor="let item of data" [item] = "item"></app-data-item>
+    </ul>
+  </div>
+</div>

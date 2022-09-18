@@ -1,0 +1,41 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.container{
+    width: 30vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing:border-box;
+    padding: 0;
+    padding-right: 1px;
+    padding-bottom: 4px;
+}
+
+.nav-tabs{
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+.tab{
+    width: 25%;
+}
+
+.navConatiner{
+    padding: 0;
+}
+
+.itemContiner{
+    width: 100%;
+    list-style: none;
+    box-sizing:border-box;
+    height: 400px;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: grey white;
+}
