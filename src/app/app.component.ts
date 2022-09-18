@@ -18,7 +18,7 @@ export class AppComponent implements OnInit  {
   ngOnInit(){
     this.route.queryParams
       .subscribe( ( params: any ) => { 
-        this.tab = Number(params.tab)
+        this.tab = Number(params.tab) || 0;
         this.data = data.data.filter( (data: dataItemInterface) => data.type === this.navs[Number(this.tab)])
         console.log(this.data)
       }
